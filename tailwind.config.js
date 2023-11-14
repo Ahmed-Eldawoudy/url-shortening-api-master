@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        logo: "url('./src/assets/images/icon-facebook.svg')",
+        logo: "url('/bg-boost-desktop.svg')",
       },
     },
   },
