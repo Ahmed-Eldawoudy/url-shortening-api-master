@@ -7,7 +7,7 @@ export default function HeroSection() {
         <h1 className="text-5xl font-bold text-darkViolet md:text-6xl">
           More than just shorter links
         </h1>
-        <p className="w-9/12 text-gray-200 max-sm:mx-auto">
+        <p className="w-9/12 text-gray-200 max-md:mx-auto">
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </p>
