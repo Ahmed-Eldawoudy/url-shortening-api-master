@@ -8,7 +8,7 @@ export default function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
   //
   return (
-    <nav className="fixed flex w-full items-center justify-between bg-white px-3 py-4 md:pt-8">
+    <nav className="container relative flex w-full items-center justify-between p-3 sm:pt-8">
       <div className=" flex w-full items-center space-x-3 md:space-x-8">
         <img src={projectImages.logo} alt="" />
         {["Features", "Pricing", "Resourses"].map((button, i) => (
@@ -21,7 +21,7 @@ export default function Header() {
           </a>
         ))}
       </div>
-      <div className="-z-10 hidden w-full space-x-3 text-right sm:block md:space-x-8">
+      <div className="hidden min-w-fit space-x-3 text-right sm:block md:space-x-8">
         <a
           href="#"
           className="hover:text-darkViolet font-bold text-gray-200 duration-100"
@@ -46,8 +46,8 @@ export default function Header() {
 function MobileNav({ showSidebar }) {
   return (
     <div
-      className={`fixed left-0 top-14 z-50 w-full bg-transparent px-3 duration-300 sm:hidden ${
-        showSidebar ? "translate-x-0" : "translate-x-full"
+      className={`absolute left-0 top-full z-50 w-full origin-top-right bg-transparent px-3 duration-300 ease-in-out sm:hidden ${
+        showSidebar ? "opacity-100" : "opacity-0"
       }`}
     >
       <div className="bg-darkViolet flex flex-col gap-6 rounded-xl py-6 text-center text-lg">
