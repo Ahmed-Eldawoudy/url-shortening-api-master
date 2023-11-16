@@ -15,23 +15,23 @@ export default function Header() {
           <a
             key={i}
             href="#"
-            className="hover:text-darkViolet hidden font-bold text-gray-200 duration-100 sm:block"
+            className="hidden text-base font-bold text-gray-200 duration-100 hover:text-darkViolet max-md:text-sm sm:block"
           >
             {button}
           </a>
         ))}
       </div>
-      <div className="hidden min-w-fit space-x-3 text-right sm:block md:space-x-8">
+      <div className="hidden min-w-fit space-x-3 text-right text-base max-md:text-sm sm:block md:space-x-8">
         <a
           href="#"
-          className="hover:text-darkViolet font-bold text-gray-200 duration-100"
+          className="font-bold text-gray-200 duration-100 hover:text-darkViolet"
         >
           Login
         </a>
         <a className="btn-cta rounded-full">Sign Up</a>
       </div>
       <button
-        className="text-darkViolet block text-3xl sm:hidden"
+        className="block text-3xl text-darkViolet sm:hidden"
         onClick={() => {
           setShowSidebar(!showSidebar);
         }}
@@ -50,7 +50,7 @@ function MobileNav({ showSidebar }) {
         showSidebar ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="bg-darkViolet flex flex-col gap-6 rounded-xl py-6 text-center text-lg">
+      <div className="flex flex-col gap-6 rounded-xl bg-darkViolet py-6 text-center text-lg">
         {["Features", "Pricing", "Resourses"].map((button, i) => (
           <a key={i} href="#" className="font-bold text-white duration-100">
             {button}
